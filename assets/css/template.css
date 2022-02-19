@@ -1,0 +1,133 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    display: flex;
+}
+
+header{
+    display: flex;
+    height: 80px;
+    flex: 1;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header ul{
+    display: flex;
+}
+
+header li, a{
+    padding: 5px;
+    list-style: none;
+    text-decoration: none;
+    color: #696969;
+}
+
+header a:hover, .active{
+    border-bottom: 2px solid #FF8c00;
+}
+
+.foto_perfil{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #FF8c00;
+    margin-right: 30px;
+}
+.icone_carrinho{
+    width: 50px;
+    height: 50px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.container_apresentacao{
+    display: flex;
+    border-top: 1px solid #FF8c00;
+}
+
+.tenis{
+    display: flex;
+    flex: 2;
+    height: 400px;
+    justify-content: center;
+    margin-top: 50px;
+}
+.texto_apresentacao{
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    height: 400px;
+    margin-top: 40px;
+}
+
+.desconto{
+    display: flex;
+    width: 100px;
+    height: 50px;
+    background-color: #F2542D;
+    border-radius: 15px;
+    color: #fff;
+    padding: 5px;
+    margin-bottom: 2px;
+}
+
+h1{
+    margin-bottom: 0px;
+}
+
+p{
+    color: #000;
+    margin-bottom: 0px;
+}
+
+.texto_descricao{
+    width: 500px;
+    color: #696969;
+}
+
+button{
+    margin-top: 20px;
+    width: 500px;
+    height:50px;
+    background-color: #FF8c00;
+    color: #FFF;
+    font-size: 22px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover{
+    opacity: 0.8;
+}
+
+@media(max-width: 670px){
+    header ul{
+        display: none;
+    }
+    .container_apresentacao{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .texto_descricao{
+        width: auto;
+        color: #696969;
+        text-align: justify;
+    }
+
+    button{
+        width: auto;
+    }
+}
